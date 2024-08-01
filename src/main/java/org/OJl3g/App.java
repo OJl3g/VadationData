@@ -1,13 +1,16 @@
 package org.OJl3g;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import org.OJl3g.entity.User;
+import org.OJl3g.userDAO.UserDAO;
+
+import java.time.LocalDate;
+
+public class App {
+    public static void main(String[] args) {
+        User user = new User("B2", 133,
+                LocalDate.of(2024,12,01));
+
+        UserDAO userDAO = new UserDAO();
+        userDAO.save(user);
     }
 }

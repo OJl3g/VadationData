@@ -1,5 +1,6 @@
-package org.OJl3g;
+package org.OJl3g.userDAO;
 
+import org.OJl3g.HibernateUtil;
 import org.OJl3g.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
